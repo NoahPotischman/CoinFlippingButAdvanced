@@ -6,6 +6,8 @@ Coinflipdatascraper: This is a python program that reads all the data that has b
 ! Please note !
 By default, the CoinFlipper contains the coinflipdatascraper automatically intergrated. Once you finish generating the coinflips and the data is sent, you will be prompted with a question about if you want the session data sent or not. I will all include the scraper seperately. 
 
+When a coin is flipped, there is a 50/50 chance that it lands on either side. If a coin is flipped and lands on heads, there is still a 50% chance the coin will land on heads again. But, that is only after the coin is flipped. Before the coin is ever flipped, there is a 50% chance it will land on heads the first time, and a 25% chance that it will land on heads, then heads again. The calculation for the probability can be done by doing (0.5 ^ x) 0.5 repersents 50%, which are the chances of the coin landing on either side, and x is equal to whatever the longest streak is. ex (0.5 ^ 2) = 0.25(100) = 25%
+
 ----- Scroll to the very bottom for install steps -----
 
 The metrics calculated and saved include:
@@ -53,4 +55,6 @@ A typical generation would look like this
 
 
 How to install:
-
+1. Download the CoinFlipper.py file
+2. Search for the word "change" and go to all the places where it says change/replace this with that. You should have to change 2 discord webhooks and 3 file location paths.
+3. Run the file and get your results.
