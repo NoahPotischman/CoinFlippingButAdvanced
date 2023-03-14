@@ -2,12 +2,12 @@ import requests
 import datetime
 
 # Define the webhook URL and headers
-webhook_url = "https://discordapp.com/api/webhooks/1081510475973525504/e0ZOJVbopQ2Cx8GK7xUb2mmFOnEDK87K9No5AsK-tV-Jo9_zphpGoo_s5nnL_kNAi9xV"
+webhook_url = "Replace this with your discord webhook"
 headers = {"Content-Type": "application/json"}
 
 # Define the path to the input and output files
-input_file_path = "C:/Users/Glory/Desktop/coinflipdata.txt"
-output_file_path = "C:/Users/Glory/Desktop/coinflipbests.txt"
+input_file_path = "Replace this with the absolute path of the file that the flipper is writting to"
+output_file_path = "Replace this with the absolute path of the file that you want the session bests to be written to"
 
 # Initialize variables
 longest_heads_streak = 0
