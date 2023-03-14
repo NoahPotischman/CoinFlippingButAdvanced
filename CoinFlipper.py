@@ -78,7 +78,7 @@ def calculate_streak_probability():
 # Define a function to write metrics to a file
 def write_metrics(metrics):
     heads_probability, tails_probability = calculate_streak_probability()
-    with open('C:/Users/Glory/Desktop/coinflipdata.txt', 'a') as f:
+    with open('Change this to the absolute path of wherever you want the performance metrics to be written to', 'a') as f:
         # Write metrics to file along with longest heads and tails streaks
         f.write(metrics + f"\nLongest Heads Streak: {longest_heads_streak}\nLongest Tails Streak: {longest_tails_streak}\n")
         f.write(f"Probability of Longest Heads Streak: {heads_probability}\nProbability of Longest Tails Streak: {tails_probability}\n")
@@ -87,7 +87,7 @@ def write_metrics(metrics):
 """ sends metrics to a Discord webhook in an imbed format with a blue sidebar"""
 def send_metrics(metrics, name):
     now = datetime.now()
-    webhook_url = "https://discord.com/api/webhooks/1079668140029509672/CLqGSPkL0vSyRKzLw12GP5SqYHcn-zkWQOYxZJT0L7Rzj34MEry_4Rfh3Wlm7zXAFJkF"
+    webhook_url = "Replace this with your discord webhook URL"
     headers = {"Content-Type": "application/json"}
 
     # Call the write_metrics function to calculate the probability values
@@ -215,12 +215,12 @@ if __name__ == "__main__":
 """This function scrapes the entire coinflipdata txt file checking the longest heads and tails streak for every coinflip instance, then checks each one to produce the largest. This data will be sent to a discord webhook, and written to a file"""
 def flipdata():
 
-    webhook_url = "https://discordapp.com/api/webhooks/1081510475973525504/e0ZOJVbopQ2Cx8GK7xUb2mmFOnEDK87K9No5AsK-tV-Jo9_zphpGoo_s5nnL_kNAi9xV"
+    webhook_url = "Replace this with your discord webhook URL"
     headers = {"Content-Type": "application/json"}
 
     # input (file the data is read from) output (file where results are written to)
-    input_file_path = "C:/Users/Glory/Desktop/coinflipdata.txt"
-    output_file_path = "C:/Users/Glory/Desktop/coinflipbests.txt"
+    input_file_path = "Change this to the absolute path of wherever you want the session metrics to be read from"
+    output_file_path = "Change this to the absolute path of wherever you want the session metrics to be written to"
 
     longest_heads_streak = 0
     longest_tails_streak = 0
