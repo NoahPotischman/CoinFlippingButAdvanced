@@ -28,6 +28,8 @@ Probability of Longest Tails Streak (This contains both scientific notation and 
 Request metadata (This includes the username of the person who generated the instance, which they are prompted to provide before any data is saved, as well as the date and time of the generation)
 
 A typical generation would look like this:
+
+
 ![image](https://user-images.githubusercontent.com/114684575/224890888-0c94981e-bf3b-4724-9fe5-26cdaf0837fa.png)
 
 
@@ -42,6 +44,8 @@ The longest Tails streak from the most recent session is
 Request metadata (This includes the date and time of the request)
 
 A typical generation would look like this
+
+
 ![image](https://user-images.githubusercontent.com/114684575/224891132-7dda4a80-4daa-4d1d-a6fc-8094f6c9d85a.png)
 
 
